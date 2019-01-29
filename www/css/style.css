@@ -1,0 +1,240 @@
+/*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+*/
+
+body
+{
+    font-family: Roboto, sans-serif;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: #02021e;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.app
+{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    background: #02021e;
+    overflow: hidden;   
+}
+
+.header
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.header img
+{
+    position: absolute;
+    top: -40px;
+    filter: blur(2px);
+    opacity: 0.6;
+}
+
+.header .city
+{
+    position: absolute;
+    text-align: center;
+    margin-right: 0px;
+    margin-top: 50px;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 1px 10px 15px rgba(0,0,0,0.3);
+    width: 100%;
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+.header .weather
+{
+    position: absolute;
+    width: 100%;
+    height 232px;
+    display: block;
+    color: rgba(255,255,255,0.9);
+    font-size: 155px;
+    text-align: center;
+    margin-top: 120px;
+    text-shadow: 1px 10px 15px rgba(0,0,0,0.3);
+}
+
+.header .temp
+{
+    position: absolute;
+    text-align: center;
+    font-size: 85px; 
+    font-weight: 100;
+    left: 20%;
+    margin-top: 15px;
+    text-shadow: none;
+}
+
+.header .temp .unit
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+    font-weight: 350;
+    font-style: normal;
+    margin-right: -45px;
+    margin-top: -4px;
+}
+
+.header .weather .wi
+{
+    position: absolute;
+    text-align: center;
+    font-size: 85px; 
+    font-weight: 100;
+    right: 20%;
+    margin-top: 15px;
+    text-shadow: none; 
+}
+
+.header:before,
+.header:after
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;    
+    z-index: 9;
+}
+
+.header:before
+{
+    bottom: 0;
+    box-shadow: inset 0 -55px 50px -25px #02021e;
+}
+
+.header:after
+{
+    top: 0;
+    box-shadow: inset 0 40px 50px -25px #02021e;
+}
+
+.header .title
+{
+    position: relative;
+    top: 290px;
+    z-index: 9;
+    margin-left: 10%;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.stats ul
+{
+    margin-top:280px;
+    padding: 0;
+    list-style-type: none;
+    font-weight: 500;
+    color: rgba(255,255,255,1);
+}
+
+.stats ul li
+{
+    display: inline-block;
+    text-align: center;
+    float:left;
+    list-style: none;
+    width: 33%;
+}
+
+.stats .wi
+{
+    font-size: 18px;
+    color: rgba(255,255,255,1);
+}
+
+.main
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+.main .forecast
+{
+    position:relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main ul
+{
+    padding: 0;
+    list-style-type: none;
+    margin-left: 10%;
+    font-weight: 500;
+    color: rgba(255,255,255,0.3)
+}
+
+.main ul li
+{
+    text-align: left;
+    list-style: none;
+    height: 30px;
+}
+
+.main h4 ul li .wi
+{
+    font-size: 18px;
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    margin-right: -10px;
+}
+
+
+.main ul
+{
+    padding: 0;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+.main h4 ul li
+{
+    display: inline-block;
+    text-align: center;
+    float:left;
+    list-style: none;
+    width: 180px;
+    word-spacing: 10px;
+    margin-left: 40%;
+    margin-top: -16px;
+}
